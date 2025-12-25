@@ -1,78 +1,190 @@
-TAJ 10 — Web-Based Operating System Platform
+🧠 TAJ 10
+Web-Based Operating System Platform
 
-TAJ 10 is a modern, web-based operating system built with Next.js, React, and a remote-first architecture.
-It delivers an OS-like experience directly in the browser through a powerful Web Viewer, modular kernel apps, and AI-assisted system operations.
+TAJ 10 is an experimental, web-native operating system platform built with modern web technologies.
+It delivers an OS-like environment directly inside the browser, combining a modular kernel architecture, a powerful web viewer, and AI-assisted system operations.
 
-TAJ 10 is designed as a scalable, extensible platform, not just a UI concept — enabling real system-level workflows inside a web environment.
+TAJ 10 explores a fundamental question:
 
-✨ Key Features
-🧠 AI-Powered System Operations
+What does an operating system look like in an AI-first, web-native world?
 
-Integrated Google Gemini for intelligent system actions
+🚀 Vision
 
-AI-assisted commands, automation, and task execution
+Traditional operating systems are tightly coupled to hardware.
+TAJ 10 reimagines the OS as a cloud-ready, remote-first, browser-based system where:
 
-Context-aware responses tailored to OS-level workflows
+The browser is the runtime
 
-🖥 Web-Based OS Interface
+The web is the kernel surface
 
-Fully browser-based operating system experience
+AI acts as a system-level co-processor
 
-Desktop-like environment with window management
+Applications behave like modular kernel services
 
-High-performance Web Viewer for seamless interaction
+This project is not a UI demo — it is an operating system concept implemented in real code.
 
-⚙️ Modular Kernel Applications
+✨ Core Features
+🖥 Web-Based OS Environment
 
-Built-in kernel-level apps (system tools, utilities, managers)
+OS-like desktop experience inside the browser
 
-Plugin-ready architecture for adding new system modules
-
-Clear separation between core system and extensions
-
-🌐 Remote-First Architecture
-
-Designed for remote access and cloud-based usage
+Windowed UI and system-level interaction patterns
 
 No local installation required
 
-Optimized for scalability and future multi-user support
+⚙️ Modular Kernel Architecture
 
-🧩 Built with Modern Web Stack
+Internal kernel-style applications and services
 
-Next.js for performance and routing
+Clear separation between core system logic and apps
 
-React for dynamic UI and state management
+Extensible design for future plugins and system modules
 
-Component-driven and maintainable architecture
+🧠 AI-Assisted System Layer
 
-🏗 Architecture Overview
-taj-10/
-├── core/
-│   ├── kernel/
-│   ├── system-services/
-│   └── ai-integration/
-├── apps/
-│   ├── system-tools/
-│   └── built-in-apps/
-├── web-viewer/
-├── ui/
-└── utils/
+Integrated Google Gemini
+
+AI used for:
+
+System commands
+
+Task execution
+
+Context-aware operations
+
+Designed as a first-class system component (not a chatbot)
+
+🌐 Remote-First Design
+
+Built for cloud and remote usage
+
+Stateless-friendly and scalable
+
+Ready for future multi-user expansion
+
+🧩 Modern Web Stack
+
+Next.js for routing, performance, and structure
+
+React for UI and state orchestration
+
+Modular, maintainable, and extensible codebase
+
+🏗 High-Level Architecture
+TAJ 10 Architecture
+
+┌──────────────────────────────┐
+│        Web Viewer UI         │
+│  (Desktop / Windows / Shell) │
+└──────────────┬───────────────┘
+               │
+┌──────────────▼───────────────┐
+│        System Kernel         │
+│  - Core services             │
+│  - Process logic             │
+│  - App lifecycle             │
+└──────────────┬───────────────┘
+               │
+┌──────────────▼───────────────┐
+│      AI System Layer         │
+│  - Gemini integration        │
+│  - Command interpretation   │
+│  - Intelligent automation   │
+└──────────────┬───────────────┘
+               │
+┌──────────────▼───────────────┐
+│     Built-in Kernel Apps     │
+│  - System tools              │
+│  - Utilities                 │
+│  - Internal services         │
+└──────────────────────────────┘
+
+📁 Project Structure
+taj10/
+├── index.html            # Entry point
+├── check_storage.js      # System storage validation
+├── eslint.config.js      # Linting & standards
+├── ui/                   # System UI components
+├── kernel/               # Core system logic
+├── apps/                 # Built-in kernel apps
+├── ai/                   # AI & Gemini integration
+├── assets/               # Images & static resources
+└── utils/                # Shared system utilities
 
 
-🚀 Use Cases
+Folder names and structure follow OS-style semantics, not just web conventions.
 
-Experimental web-based operating systems
+🧠 AI Integration Philosophy
 
-AI-powered system dashboards
+TAJ 10 treats AI as a system-level capability, not a feature.
 
-Remote OS interfaces
+Example conceptual flow:
 
-Web-first productivity platforms
+system.execute({
+  command: "organize my workspace",
+  context: "current session",
+  ai: "gemini"
+});
 
-Research & prototyping of OS-like web environments
 
-📌 Project Status
 
+AI is intended to:
+
+Assist system operations
+
+Reduce manual workflows
+
+Enable future autonomous OS behavior
+
+🧪 Current Status
+
+Project Stage: Alpha / Experimental
 TAJ 10 is under active development.
-Architecture and core systems are evolving rapidly.
+
+Architecture is evolving
+
+APIs are unstable
+
+Features are being iterated rapidly
+
+This repository represents a working foundation, not a finished OS.
+
+🗺 Roadmap
+
+ Stable Kernel API (v1)
+
+ Permission & sandbox system
+
+ Multi-window process manager
+
+ Plugin system for third-party apps
+
+ Multi-user session support
+
+ Persistent cloud storage abstraction
+
+ AI-driven automation workflows
+
+🧑‍💻 Development Setup
+# install dependencies
+npm install
+
+# run development server
+npm run dev
+
+# build for production
+npm run build
+
+🤝 Contributing
+
+Contributions, ideas, and architectural discussions are welcome.
+
+If you want to:
+
+Improve kernel design
+
+Add system-level features
+
+Enhance AI workflows
+
+Please open an issue or submit a pull request.
